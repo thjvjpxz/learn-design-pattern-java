@@ -1,6 +1,12 @@
 package Singleton.LazyInitialization;
 
 public class Student {
+    /**
+     * Ưu điểm:
+     *  - Dễ sử dụng, triển khai
+     * Nhược điểm:
+     *  - Xảy ra vấn đề nếu sử dụng Thread --> dẫn đến sử dụng đồng thời
+     */
     private static Student instance;
     private String name;
     private int age;
