@@ -7,8 +7,6 @@ This repository is dedicated to learning design patterns in Java.
 1. [Introduction](#introduction)
 2. [Creational Patterns](#creational-patterns)
 3. [Structural Patterns](#structural-patterns)
-4. [Behavioral Patterns](#behavioral-patterns)
-5. [Conclusion](#conclusion)
 
 ## Introduction
 
@@ -19,39 +17,12 @@ Design patterns are typical solutions to common problems in software design. Eac
 Creational patterns provide various object creation mechanisms, which increase flexibility and reuse of existing code. Some examples are:
 
 - Singleton
-- Factory Method
-- Abstract Factory
-- Builder
-- Prototype
+    - [Lazi Initialization](Singleton/LazyInitialization)
+    - [Eager Initialization](Singleton/EagerInitialization)
+    - [Double Checked Locking](Singleton/DoubleCheckedLocking)
 
 ## Structural Patterns
 
-Structural patterns explain how to assemble objects and classes into larger structures while keeping these structures flexible and efficient. Some examples are:
+Structural patterns are concerned with how classes and objects can be composed, to form larger structures. The structural design patterns simplify the structure by identifying the relationships. These patterns focus on, how the classes inherit from each other and how they are composed from other classes.
 
-- Adapter
-- Bridge
-- Composite
-- Decorator
-- Facade
-- Flyweight
-- Proxy
-
-## Behavioral Patterns
-
-Behavioral patterns are concerned with algorithms and the assignment of responsibilities between objects. Some examples are:
-
-- Chain of Responsibility
-- Command
-- Interpreter
-- Iterator
-- Mediator
-- Memento
-- Observer
-- State
-- Strategy
-- Template Method
-- Visitor
-
-## Conclusion
-
-Design patterns are a toolkit of tried and tested solutions to common problems in software design. They define a common language that helps your team communicate more efficiently.
+- [Data Access Object (DAO)](DAO)
