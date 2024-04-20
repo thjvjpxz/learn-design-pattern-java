@@ -16,7 +16,7 @@ Design patterns are typical solutions to common problems in software design. Eac
 
 Creational patterns provide various object creation mechanisms, which increase flexibility and reuse of existing code. Some examples are:
 
-- Singleton
+- [Singleton](Singleton)
     - [Lazi Initialization](Singleton/LazyInitialization)
     - [Eager Initialization](Singleton/EagerInitialization)
     - [Double Checked Locking](Singleton/DoubleCheckedLocking)
