@@ -7,3 +7,9 @@ public interface EmployeeDAO {
     void addEmployee(Employee employee);
     void removeEmployee(Employee employee);
 }
+
+// public interface EmployeeDAO<T> {
+//     List<T> getAll();
+//     void add(T employee);
+//     void remove(T employee);
+// }
