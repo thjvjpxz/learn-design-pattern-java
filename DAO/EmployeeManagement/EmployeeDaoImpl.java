@@ -41,6 +41,11 @@ public class EmployeeDaoImpl implements EmployeeDAO {
         return false;
     }
 
+    public int getNextId() {
+        int idCurr = employees.get(employees.size() - 1).getId();
+        return ++idCurr;
+    }
+
     @Override
     public void addEmployee(Employee employee) {
         if (checkIdExist(employee.getId())) {
@@ -57,11 +62,15 @@ public class EmployeeDaoImpl implements EmployeeDAO {
 
     @Override
     public void removeEmployee(Employee employee) {
-        if (employees.contains(employee)) {
-            employees.remove(employee);
-            System.out.println("Xóa thành công nhân viên " + employee.getName());
-            return;
+        
+        for (Employee e : employees) {
+            if (e.getId() == employee.getId()) {
+                employees.remove(e);
+                System.out.println("Xóa thành công nhân viên");
+                return;
+            }
         }
+
         System.out.println("Nhân viên không tồn tại");
     }
 }
