@@ -26,3 +26,8 @@ Creational patterns provide various object creation mechanisms, which increase f
 Structural patterns are concerned with how classes and objects can be composed, to form larger structures. The structural design patterns simplify the structure by identifying the relationships. These patterns focus on, how the classes inherit from each other and how they are composed from other classes.
 
 - [Data Access Object (DAO)](DAO)
+
+## Exercise
+
+- [Employee Management](DAO/EmployeeManagement)
+- [Student Management](DAO/StudentManagement)
