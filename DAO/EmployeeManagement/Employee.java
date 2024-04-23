@@ -16,7 +16,7 @@ public class Employee {
         this.age = age;
         this.department = department;
         this.code = code;
-        this.salaryRate = salaryRate;
+        this.salaryRate = checkRate(salaryRate) ? salaryRate : 0;
     }
 
     public boolean checkRate(short rate) {
